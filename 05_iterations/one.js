@@ -16,9 +16,7 @@ for (let i = 0; i < 10; i++) {
         console.log("5 Break");
         break; //Break breaks out of the loop.
     }
-
-    console.log(i);
-    
+    console.log(i); 
 }
 
 for (let i = 11; i < 20; i++) {
@@ -27,7 +25,5 @@ for (let i = 11; i < 20; i++) {
         continue;
         //Continue skips the on check.
     }
-
-    console.log(i);
-    
+    console.log(i);   
 }
