@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-black">
+        <h1 id="title" class="heading">DOM learning <span style="display: none;">Test text</span></h1>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sint excepturi eveniet error, quia ratione suscipit in unde exercitationem ducimus officia perferendis voluptate vero delectus eius aliquam veniam. Nobis, consectetur.</p>
+        <input type="password" name="" id="">
+
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
+        </ul>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
+
+
+<!--
+     window object
+     windows.document is equivalent to document
+     console.dir(document)
+     HTMl Collections, Node Collections/list are not arrays.
+     Always use forEach loop with node lists. All Array methods will not work on it.
+     In browser:
+     document.getElementById('id').innerHTML = "Vivek Anand";
+     document.getElementById('id').id
+     document.getElementById('id').class
+     document.getElementById('id').className
+     document.getElementById('id').getAttribute
+     document.getElementById('id').getAttribute('class')
+     document.getElementById('id').setAttribute('class', 'value heading')
+     document.getElementById('id').setAttribute('class', 'value heading')
+     document.querySelector('#title')
+     document.querySelector('.heading')
+     document.querySelector('input[type="password"]')
+     querySelector is just like CSS selectors.
+     document.getElementByClassName("")
+     Note: HTML collection is different from the Node collection.
+     Array.from(HTMLCollectionName) -> Convert HTML collection to an array.
+    -->
