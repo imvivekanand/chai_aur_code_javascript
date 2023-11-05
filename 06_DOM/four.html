@@ -11,6 +11,7 @@
     </ul>
 </body>
 <script>
+    //for smaller projects it is fine.
     function addLanguage(langName){
         const li = document.createElement('li');
         li.innerHTML = `${language}`
@@ -18,5 +19,20 @@
     }
     addLanguage("python")
     addLanguage("typescript")
+
+    //for larger project use this methos - It is more optimized.
+    function addOptiLanguage(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage('golang')
+
+    //Edit
+    const secondLang = document.querySelector("li: nth-child(2)")
 </script>
 </html>
+
+//practice querySelector on mdn or w3school.
+//select, edit, remove
+//watch video again
