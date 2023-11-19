@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>QualiME! Learn Programming</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log("QualiME! Learn Programming");
+    // }, 5000)
+
+    const sayQualiMe = function(){
+        console.log("QualiMe! Learn Programming");
+    }
+
+    setTimeout(sayQualiMe, 10000)
+
+    const changeText = function(){
+        document.querySelector("h1").innerHTML = "Learn Web Dev Easily For Free!"
+    }
+
+    const changeHeading = setTimeout(changeText, 5000)
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeHeading)
+        console.log("Stopped");
+    })
+</script>
+</html>

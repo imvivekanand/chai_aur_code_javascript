@@ -35,18 +35,40 @@ function validateGuess(guess){
         if(numGuess === 11){
             displayGuess(guess)
             displayMessage(`Game Over. Random number was ${randomNumber}`)
+            endGame();
+        } else{
+            displayGuess(guess)
+            checkGuess(guess)
         }
     }
 }
 
 function checkGuess(guess){
-
+    if(guess === randomNumber){
+        displayMessage("You guessed it right.")
+    } else if(guess < randomNumber){
+        displayMessage("Number is too low.")
+    } else if(guess > randomNumber){
+        displayMessage("Nmber is too high")
+    }
 }
 
 function displayGuess(guess){
+    userInput.value = '';
+    guessSlot.innerHTML += `${guess}, `;
+    numGuess++;
+    remaining.innerHTML = `${11 - numGuess}`
 
 }
 
-function displayMessage(guess){
+function displayMessage(message){
+    lowOrHi.innerHTML = `<h2>${message}</h2>`
+}
+
+function endGame(){
+    
+}
+
+function newGame(){
 
 }
