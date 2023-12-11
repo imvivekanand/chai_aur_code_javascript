@@ -8,7 +8,7 @@ const chai = {
     isAvailable: true,
     made: function(){
         console.log("Chai nahi bani");
-    }
+    } 
 }
 
 console.log(Object.getOwnPropertyDescriptor(chai, "name"));
